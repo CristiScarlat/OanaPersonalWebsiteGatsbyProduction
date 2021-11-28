@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "oana-website-gatsby-bootstrap",
+    title: "oana-website-gatsby",
   },
   plugins: [
     "gatsby-plugin-fontawesome-css",
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: `${__dirname}/src/images/icon.png`,
       },
     },
     "gatsby-plugin-sharp",
@@ -26,7 +26,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/albums",
+        path: `${__dirname}/src/images/albums`,
       },
       __key: "images",
     },
