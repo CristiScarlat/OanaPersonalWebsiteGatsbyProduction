@@ -1,0 +1,7 @@
+.about-wrapper {
+    height: 90%;
+    overflow-y:auto;
+    color: #cac9c9;
+    padding: 3rem;
+    font-size: larger;
+}

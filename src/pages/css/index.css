@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); 
+
+body{
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Roboto', cursive; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: whitesmoke;
+    background: black;
+}
+
+::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(19, 19, 19);;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 44);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(19, 19, 19);  /* creates padding around scroll thumb */
+}
+
+.home-container {
+    background: black;
+}
+
+.home-container p{
+    color: grey;
+    margin: 0px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.home-images-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 760px){
+    #paul-gauguin-min-420 {
+        display: none;
+    }
+    .home-container p{
+        color: grey;
+        margin: unset;
+        font-size: unset;
+        letter-spacing: unset;
+    }
+
+}
+
+@media only screen and (min-width: 760px){
+    #paul-gauguin-max-420 {
+        display: none;
+    }
+}

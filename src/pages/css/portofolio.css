@@ -1,0 +1,45 @@
+.albums-tabs-container {
+    border-color: rgb(65, 64, 64);
+    font-size: larger;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+.albums-tab {
+    border: 1px solid rgb(158, 158, 158);
+    color: whitesmoke;
+    background: none;
+}
+
+.albums-tabs-container a:hover{
+    border: 1px solid rgb(158, 158, 158);
+    color: black;
+    background: whitesmoke;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: 1px solid rgb(158, 158, 158);
+    color: black;
+    background: whitesmoke;
+}
+
+.tab-content {
+    display: flex;
+    height: 80%;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.gallery-swipe-container {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-swipe-container img{
+    width: 320px;
+    margin: 0.5rem;
+}
