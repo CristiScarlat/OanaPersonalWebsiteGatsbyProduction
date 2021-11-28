@@ -11,7 +11,7 @@ const Header = () => {
                 <Nav className="mr-auto">
                     <Link to="/" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>Home</Link>
                     <Link to="/portofolio" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>Paintings</Link>
-                    <Link to="/media" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>Interviews and media</Link>
+                    {/* <Link to="/media" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>Interviews and media</Link> */}
                     <Link to="/about" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>About me</Link>
                 </Nav>
             </Navbar.Collapse>
