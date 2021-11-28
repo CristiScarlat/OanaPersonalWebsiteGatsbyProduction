@@ -28,7 +28,7 @@ const IndexPage = () => {
         </Row>
         <Row>
           <div className="home-images-container">
-            {allImages.filter(i => i.aspectRatio === 1).map(imgObj => <Link to="/portofolio">
+            {(allImages && allImages.length > 0) && allImages.filter(i => i.aspectRatio === 1).map(imgObj => <Link to="/portofolio">
               <img width="320px" height={320 / imgObj.aspectRatio} key={imgObj.src} src={imgObj.src} className="m-1" />
             </Link>)}
           </div>
