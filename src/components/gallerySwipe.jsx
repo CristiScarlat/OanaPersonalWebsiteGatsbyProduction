@@ -16,8 +16,8 @@ const GallerySwipe = ({ imageList }) => {
     return (
         <div className="gallery-swipe-container">
             <Gallery>
-                {localList.map(imgObj => <Item
-                    key={imgObj.id}
+                {localList.map((imgObj, index) => <Item
+                    key={imgObj.id + "gallery-swipe" + index}
                     original={imgObj.original}
                     thumbnail={imgObj.thumbnail}
                     width={imgObj.width}

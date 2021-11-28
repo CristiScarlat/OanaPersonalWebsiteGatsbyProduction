@@ -5569,7 +5569,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "icon": "src/images/icon.png",
+    "icon": "/home/cristian/Documents/SWPrjs/GatsbyPrjs/oana-website-gatsby-bootstrap-production-repo/src/images/icon.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",

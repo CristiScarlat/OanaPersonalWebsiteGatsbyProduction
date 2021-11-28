@@ -10,13 +10,13 @@ const Portofolio = () => {
 
     return (
         <Layout>
-            <Tabs defaultActiveKey={allAlbums[3]} className="albums-tabs-container mb-3">
+            {(allAlbums && allAlbums.length > 0) && <Tabs defaultActiveKey={allAlbums[3]} className="albums-tabs-container mb-3">
                 {allAlbums.map(album => (
                 <Tab key={album} eventKey={album} title={album} tabClassName="albums-tab">
                     <GallerySwipe imageList={allImages.filter(imgObj => imgObj.relativeDirectory === album && !imgObj.originalName.includes('img-0'))} />
                 </Tab>
                 ))}
-            </Tabs>
+            </Tabs>}
         </Layout>
     )
 }
