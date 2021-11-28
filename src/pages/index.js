@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout";
 import { Container, Row, Col } from "react-bootstrap";
-import { UI_TEXT } from './constants';
+//import { UI_TEXT } from './constants';
 import GraphqlContext from "../context/graphDataContext";
 import { Link } from 'gatsby'
 import './css/index.css'
@@ -16,13 +16,13 @@ const IndexPage = () => {
           <Col md="auto">
             <div style={{ position: 'relative' }}>
               <img src="img/home-no-text.jpg" style={{ width: '100%' }} />
-              <p id="paul-gauguin-min-420" style={{ position: 'absolute', top: '50%', right: 0 }}>{UI_TEXT.PAUL_GAUGUIN}</p>
+              <p id="paul-gauguin-min-420" style={{ position: 'absolute', top: '50%', right: 0 }}>{"\"I shot my eyes in order to see.\" ~Paul Gauguin"}</p>
             </div>
           </Col>
         </Row>
         <Row id="oana-name" className="justify-content-md-center mt-2 mb-2">
           <Col md="auto">
-            <p id="paul-gauguin-max-420">{UI_TEXT.PAUL_GAUGUIN}</p>
+            <p id="paul-gauguin-max-420">{"\"I shot my eyes in order to see.\" ~Paul Gauguin"}</p>
             <p>PhD Artist Oana Bolog-Bleich</p>
           </Col>
         </Row>
