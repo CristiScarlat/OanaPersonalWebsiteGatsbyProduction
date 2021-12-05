@@ -8,7 +8,7 @@ const About = () => {
         <Layout>
             <div className="about-wrapper">
                 <div className="content">
-                    <div class="about-content-container">
+                    <div className="about-content-container">
                         <h3>Currently:</h3>
                         <p>PhD Visual artist and Art teacher </p>
 

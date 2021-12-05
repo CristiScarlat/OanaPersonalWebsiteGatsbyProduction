@@ -41,6 +41,11 @@ body{
     overflow-x: auto;
 }
 
+.link-active {
+    color: 'white'!important; 
+    font-weight: 'bold'!important;
+}
+
 @media only screen and (max-width: 760px){
     #paul-gauguin-min-420 {
         display: none;
