@@ -3,8 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'gatsby'
 
 const Header = () => {
-    const getPropsForLink = ({isCurrent}) => {
-        //activeStyle={{color: 'white', fontWeight: 'bold'}} 
+    const getPropsForLink = ({isCurrent}) => { 
         return isCurrent ? {style: {color: 'white', fontWeight: 'bold', marginRight: '1rem'} } : null
     }
     return (

@@ -1,11 +1,14 @@
-import React, { createContext } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import { graphql, useStaticQuery } from "gatsby";
 
 const GraphqlContext = createContext({});
 
 
 export const GraphDataProvider = ({ children }) => {
-    const { allFile, allDirectory } = useStaticQuery(graphql`
+  const [images, setImages] = useState([]);
+  const [albums, setAlbums] = useState([]);
+
+  const { allFile, allDirectory } = useStaticQuery(graphql`
     query {
         allDirectory(filter: {sourceInstanceName: {eq: "images"}}) 
         {
@@ -34,18 +37,18 @@ export const GraphDataProvider = ({ children }) => {
       }
     }`);
 
-    const getImageObjs = (data) => {
-        const imageObjs = data.map(iobj => ({...iobj.node.childImageSharp.fluid, relativeDirectory: iobj.node.relativeDirectory, id: iobj.node.id}))
-        return imageObjs
-      }
+  useEffect(() => {
+      const imageObjs = allFile.edges.map(iobj => ({ ...iobj.node.childImageSharp.fluid, relativeDirectory: iobj.node.relativeDirectory, id: iobj.node.id }))
+      const allAlbums = allDirectory.edges.map(d => d.node.name).filter(name => name !== 'albums');
+      setImages(imageObjs)
+      setAlbums(allAlbums);
 
-    const getAllAlbums = (data) => {
-        return data.map(d => d.node.name).filter(name => name !== 'albums')
-    }
+  }, [allFile, allDirectory])
 
-    return(
-        <GraphqlContext.Provider value={{allImages: getImageObjs(allFile.edges), allAlbums: getAllAlbums(allDirectory.edges)}}>{children}</GraphqlContext.Provider>
-    )
+
+  return (
+    <GraphqlContext.Provider value={{ allImages: images, allAlbums: albums }}>{children}</GraphqlContext.Provider>
+  )
 }
 
 export default GraphqlContext;
