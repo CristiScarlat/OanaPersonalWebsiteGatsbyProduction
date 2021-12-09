@@ -14,7 +14,7 @@ const Header = () => {
                 <Nav className="mr-auto">
                     <Link to="/" style={{marginRight: '1rem', color: 'grey'}} getProps={getPropsForLink}>Home</Link>
                     <Link to="/portofolio/" style={{marginRight: '1rem', color: 'grey'}} getProps={getPropsForLink}>Paintings</Link>
-                    {/* <Link to="/media" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>Interviews and media</Link> */}
+                    <Link to="/media" style={{marginRight: '1rem', color: 'grey'}} activeStyle={{color: 'white', fontWeight: 'bold'}}>Interviews and media</Link>
                     <Link to="/about/" style={{marginRight: '1rem', color: 'grey'}} getProps={getPropsForLink}>About me</Link>
                 </Nav>
             </Navbar.Collapse>
