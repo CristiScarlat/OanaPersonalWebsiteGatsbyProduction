@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.oanabologbleich.com",
     title: "oana-website-gatsby",
   },
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: `${__dirname}/src/images/icon.png`,
+        icon: `${__dirname}/src/images/gatsby-icon.png`,
       },
     },
     "gatsby-plugin-sharp",

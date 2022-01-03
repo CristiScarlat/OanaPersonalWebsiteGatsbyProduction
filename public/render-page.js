@@ -5569,13 +5569,13 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "icon": "/home/cristian/Documents/SWPrjs/GatsbyPrjs/oana-website-gatsby-bootstrap-production-repo/src/images/icon.png",
+    "icon": "/home/cristian/Documents/SWPrjs/GatsbyPrjs/oana-website-gatsby-bootstrap-production-repo/src/images/gatsby-icon.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "53aa06cf17e4239d0dba6ffd09854e02"
+    "cacheDigest": "45229a47a00d37ff3cef22a463ba7194"
   }
 }];
 /* global plugins */
