@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); 
+/*@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');*/
 
 body{
-    font-family: 'Dancing Script', cursive;
-    /* font-family: 'Roboto', cursive; */
+    /*font-family: 'Pushster', cursive;*/
+    font-family: sans-serif;
+    font-size: 12px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: whitesmoke;
     background: black;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -23,22 +26,26 @@ body{
     border: 3px solid rgb(19, 19, 19);  /* creates padding around scroll thumb */
 }
 
-.home-container {
-    background: black;
+.home-button {
+    position: fixed;
+    top: 50%;
+    left: calc(50% - 100px);
+    width: 200px;
+    background: #0000003b;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    color: gray;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
 }
 
-.home-container p{
-    color: grey;
-    margin: 0px;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-}
-
-.home-images-container {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    overflow-x: auto;
+.home-button:hover {
+    background: #00000091;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .link-active {
@@ -47,9 +54,6 @@ body{
 }
 
 @media only screen and (max-width: 760px){
-    #paul-gauguin-min-420 {
-        display: none;
-    }
     .home-container p{
         color: grey;
         margin: unset;
@@ -60,7 +64,5 @@ body{
 }
 
 @media only screen and (min-width: 760px){
-    #paul-gauguin-max-420 {
-        display: none;
-    }
+
 }
