@@ -1,12 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
-// import InterviewMovie from '../assets/a.mp4';
-// import HypnoticVideo from '../assets/Hypnotic.mp4';
 import './css/media.css';
 
 
 const Media = () => {
-    console.log(process.env)
     return (
         <Layout>
             <h1 className="p-2">Media</h1>
