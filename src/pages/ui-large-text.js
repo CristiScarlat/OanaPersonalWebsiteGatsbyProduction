@@ -48,5 +48,22 @@ export const UI_DESCRIPTION_TEXT = {
         and to the real world.</span></span></span></div>`},
         "hidden-places": {
         __html: "Hidden-Places are making a trip back to my childhood times.The images from my childhood remembrances are protected inside the Hidden-Places.The various details are leading the viewer’s eyes away from the key point of the painting.The viewer has his own revelation related to what is happening inside the Hidden Place that allows him to go inside it.And so, the key points are turning into magical pulsating points, symbols of what childhood means with its own specific  atmosphere of fairy-tales."
+    },
+    "the-realm-of-fairy-tales": {
+        __html: `<div class="MsoNormalCxSpFirst">
+        <span style="font-size: large;">Nocturnal Journey Through The Realm Of Fairy Tales </span><br>
+        <br>
+        The paintings are surprising the Magician in his ordinary life habits.There are always hidden objects to be found in the paintings.The Magician is playing with us hiding them from our eyes.As long as the Magician is passing the landscape there will always be hidden elements to look for!</div>
+        The space here can suddenly be changed by his magical power.That’s why I surprised him having <i>A Vision</i> and suddenly proceed to transform the surroundings…closing his eyes behind a closed door and prepare a key to suddenly appear from a flower or crossing a forest rolling on a big ball…this is the Magician.<br>
+        <br>`
+    },
+    "childhood-spaces": {
+        __html: `<div class="MsoNormalCxSpFirst">
+        <span style="font-size: large;">Childhood Spaces </span><br>
+        <br>
+        Space is perceived by our spirit as the most organically and structural element.Our thoughts are entirely impregnated with space. Our inside reality, inside experiences and the image being stored throughout our childhood times are organized and translated by us into space.</div>
+        <div class="MsoNormalCxSpMiddle">
+        <i>Childhood Spaces</i> show images of my own childhood bringing an internal pulse to the paintings surface and so, creating an atmospheare of contemplation.
+        I used the symbol of the House&nbsp; and the Window with all their meanings as main elements in the paintings.The House is the shelter where you can refuge, protect and keep your precious things.The Window is the one the House is using to confess itself to the world…as much as it can…</div>`
     }
 }

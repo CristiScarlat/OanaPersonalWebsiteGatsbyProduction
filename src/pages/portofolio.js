@@ -18,23 +18,13 @@ const Portofolio = () => {
         setShowDescription(false)
     }
 
+    console.log({allAlbums});
+
     return (
         <Layout>
             {(allAlbums && allAlbums.length > 0) && <Tabs defaultActiveKey={allAlbums[3]} className="albums-tabs-container mb-0" onSelect={handleTabSelect}>
                 {allAlbums.map(album => (
                     <Tab key={album} eventKey={album} title={album} tabClassName="albums-tab">
-                        {/* <Accordion defaultActiveKey="0">
-                            <Card bg="dark">
-                                <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="dark" eventKey="1">
-                                        Click to read about the project
-                                    </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="1">
-                                    <Card.Body dangerouslySetInnerHTML={hypnotic}></Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                        </Accordion> */}
                         {UI_DESCRIPTION_TEXT[album] &&
                         <>
                         <div className='p-2'>

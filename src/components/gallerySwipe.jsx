@@ -16,8 +16,6 @@ const GallerySwipe = ({ imageList }) => {
             title: o.originalName
         }))
 
-    console.log(localList.sort((a, b) => a.index > b.index))
-
     return (
         <div className="gallery-swipe-container">
             <Gallery 
