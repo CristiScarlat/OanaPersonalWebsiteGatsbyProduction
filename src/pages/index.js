@@ -11,7 +11,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-        {/* <Link to="/portofolio/" className="home-button">Welcom to my world</Link> */}
+        <Link to="/portofolio/" className="home-button">Wellcome</Link>
     </Layout>
   )
 }

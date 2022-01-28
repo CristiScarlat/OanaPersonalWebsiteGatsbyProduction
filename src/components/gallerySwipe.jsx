@@ -11,21 +11,27 @@ const GallerySwipe = ({ imageList }) => {
             thumbnail: o.src,
             width:"1024",
             height:"768",
-            aspectRatio: o.aspectRatio
+            aspectRatio: o.aspectRatio,
+            index: Number(o.originalName.substr(0,2)),
+            title: o.originalName
         }))
+
     return (
         <div className="gallery-swipe-container">
-            <Gallery shareButton={false}>
-                {localList.map((imgObj, index) => <Item
+            <Gallery 
+            shareButton={false}
+            >
+                {localList.sort((a, b) => a.index > b.index ? 1 : -1).map((imgObj, index) => <Item
                     key={imgObj.id + "gallery-swipe" + index}
                     original={imgObj.original}
                     thumbnail={imgObj.thumbnail}
                     width={imgObj.width}
                     height={(imgObj.width / imgObj.aspectRatio)}
                     style={{ margin: '1rem' }}
+                    title={imgObj.title.replace(/_/g, ' ').split('.jpg')[0]}
                 >
                     {({ ref, open }) => (
-                        <img ref={ref} onClick={open} src={imgObj.original} />
+                        <img ref={ref} onClick={open} src={imgObj.original}/>
                     )}
                 </Item>)}
             </Gallery>
