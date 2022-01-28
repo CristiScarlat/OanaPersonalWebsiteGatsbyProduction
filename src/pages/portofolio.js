@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import GraphqlContext from '../context/graphDataContext';
 import { Tabs, Tab, Accordion, Card, Button } from 'react-bootstrap';
 import GallerySwipe from '../components/gallerySwipe';
-import { UI_DESCRIPTION_TEXT } from './ui-large-text';
+import { UI_DESCRIPTION_TEXT } from '../components/ui-large-text';
 import './css/portofolio.css';
 
 const Portofolio = () => {
@@ -18,11 +18,9 @@ const Portofolio = () => {
         setShowDescription(false)
     }
 
-    console.log({allAlbums});
-
     return (
         <Layout>
-            {(allAlbums && allAlbums.length > 0) && <Tabs defaultActiveKey={allAlbums[3]} className="albums-tabs-container mb-0" onSelect={handleTabSelect}>
+            {(allAlbums && allAlbums.length > 0) && <Tabs defaultActiveKey={allAlbums[0]} className="albums-tabs-container mb-0" onSelect={handleTabSelect}>
                 {allAlbums.map(album => (
                     <Tab key={album} eventKey={album} title={album} tabClassName="albums-tab">
                         {UI_DESCRIPTION_TEXT[album] &&
