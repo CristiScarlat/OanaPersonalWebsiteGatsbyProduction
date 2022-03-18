@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import GraphqlContext from '../context/graphDataContext';
-import { Tabs, Tab, Accordion, Card, Button } from 'react-bootstrap';
+import { Tabs, Tab, Button } from 'react-bootstrap';
 import GallerySwipe from '../components/gallerySwipe';
 import { UI_DESCRIPTION_TEXT } from '../components/ui-large-text';
 import './css/portofolio.css';
