@@ -3,6 +3,7 @@ import Header from './header';
 import Footer from './footer';
 import { useLocation } from '@reach/router';
 import { Helmet } from "react-helmet";
+import CookieConsent from 'react-cookie-consent';
 
 const mainContentStyle = {
     background: 'black',
@@ -16,8 +17,34 @@ const mainStyleHome = {
     backgroundPosition: 'center center'
 }
 
+const cookieConstentStyle = {
+    bottom: '40px',
+    alignItems: 'baseline',
+    background: 'rgb(53, 53, 53)',
+    color: 'white',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    left: '0px',
+    position: 'fixed',
+    width: '100%',
+    zIndex: 10000,
+    padding: '0.5rem'
+}
+
+const cookieConstentButtonStyle = {
+    background: 'rgb(255, 212, 45)',
+    border: '0px',
+    borderRadius: '0px',
+    color: 'black',
+    cursor: 'pointer',
+    flex: '0 0 auto',
+    padding: '5px 10px'
+}
+
 const Layout = ({ children }) => {
     const location = useLocation();
+
     return (
         <main style={location.pathname === '/' ? { ...mainContentStyle, ...mainStyleHome } : mainContentStyle}>
             <Helmet>
@@ -29,6 +56,16 @@ const Layout = ({ children }) => {
             </Helmet>
             <Header />
             {children}
+            <CookieConsent
+                location=""
+                buttonText="Accept"
+                declineButtonText="Decline"
+                cookieName="gatsby-gdpr-google-analytics"
+                disableStyles={false}
+                style={cookieConstentStyle}
+                buttonStyle={cookieConstentButtonStyle}>
+                This website uses cookies to enhance the user experience.{" "}
+            </CookieConsent>
             <Footer />
         </main>)
 }
