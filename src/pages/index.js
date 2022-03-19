@@ -6,9 +6,11 @@ import './css/index.css'
 const IndexPage = () => {
 
   return (
-    <Layout>
+    <>
+      <Layout>
         <Link to="/portofolio" className="home-button">Wellcome</Link>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 
