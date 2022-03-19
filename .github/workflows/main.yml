@@ -34,8 +34,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build site
         run:
-          npm install
-          npm run build
+          yarn install
+          yarn run build
         env:
           GATSBY_MEDIA_1_URL: ${{ secrets.GATSBY_MEDIA_1_URL }}
           GATSBY_MEDIA_2_URL: ${{ secrets.GATSBY_MEDIA_2_URL }}
