@@ -31,7 +31,7 @@ const GallerySwipe = ({ imageList }) => {
                     title={imgObj.title.replace(/_/g, ' ').split('.jpg')[0]}
                 >
                     {({ ref, open }) => (
-                        <img ref={ref} onClick={open} src={imgObj.original}/>
+                        <img ref={ref} onClick={open} onKeyDown={open} src={imgObj.original} alt={imgObj.original} />
                     )}
                 </Item>)}
             </Gallery>
