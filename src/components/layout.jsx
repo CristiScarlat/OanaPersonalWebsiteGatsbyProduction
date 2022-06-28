@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
                 <meta name="description" content="This is personal webpage of PhD artist Oana Bolog-Bleich,
                     where you can see the amazing oil on canvas paintings and other drawings created by the artist using mixed media." />
                 <title>Oana Bolog-Bleich</title>
-                <link rel="canonical" href="https://oanabologbleich.com" />
+                {/* <link rel="canonical" href="https://oanabologbleich.com" /> */}
             </Helmet>
             <Header />
             {children}
