@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
     const location = useLocation();
 
     return (
-        <main style={location.pathname === '/' ? { ...mainContentStyle, ...mainStyleHome } : mainContentStyle}>
+        <main style={location.pathname === '/' ? { ...mainContentStyle } : mainContentStyle}>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="This is personal webpage of PhD artist Oana Bolog-Bleich,

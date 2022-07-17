@@ -53,6 +53,18 @@ body{
     font-weight: 'bold'!important;
 }
 
+.home-card-main {
+    width: fit-content;
+    /* border: 1px solid gray; */
+}
+
+.home-card-image {
+    object-fit: cover;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 760px){
     .home-container p{
         color: grey;
