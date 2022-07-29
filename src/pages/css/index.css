@@ -65,6 +65,34 @@ body{
     border-radius: 50%;
 }
 
+.home-card-album {
+    position: relative;
+}
+
+.home-card-image {
+    cursor: pointer;
+    margin: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.home-card-image:hover {
+    opacity: 0.2;
+    transform: rotateY(180deg);
+}
+
+.home-card-image:hover~.home-card-text-image {
+    visibility: visible;
+}
+
+.home-card-text-image {
+    font-size: 24px;
+    font-weight: 800;
+    width: 320px;
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 760px){
     .home-container p{
         color: grey;

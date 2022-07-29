@@ -14,7 +14,7 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav" style={{flexGrow: 0}}>
                 <Nav className="mr-auto">
                     <Link to="/" getProps={getPropsForLink}>Home</Link>
-                    <Link to="/portofolio" getProps={getPropsForLink}>Paintings</Link>
+                    {/* <Link to="/portofolio/hypnotic" getProps={getPropsForLink}>Paintings</Link> */}
                     <Link to="/media" getProps={getPropsForLink}>Interviews and media</Link>
                     <Link to="/about" getProps={getPropsForLink}>About me</Link>
                 </Nav>
